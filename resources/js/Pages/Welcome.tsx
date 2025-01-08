@@ -21,12 +21,8 @@ export default function Welcome() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         post(route('submit.form'), {
-            onSuccess: () => {
-                // This will automatically follow the redirect from the backend
-                // No additional code needed as Inertia handles the redirect
-            },
+            onSuccess: () => {},
             onError: (errors) => {
-                // Handle any errors here if needed
                 console.error(errors);
             },
         });
@@ -778,7 +774,6 @@ export default function Welcome() {
                     </div>
                 </section>
 
-                {/* Title Customers Reference - Positioned between sections */}
                 <div className="relative z-20 mx-auto -mt-8 max-w-4xl px-4">
                     <h3 className="bg-[#293660] px-8 py-4 text-center text-2xl font-bold text-white">
                         Cyber Command Customers Reference
@@ -825,7 +820,6 @@ export default function Welcome() {
                             backgroundSize: 'cover',
                         }}
                     ></div>
-                    {/* Overlay putih transparan */}
                     <div
                         className="absolute inset-0"
                         style={{

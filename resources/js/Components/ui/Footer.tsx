@@ -38,7 +38,7 @@ export default function Footer() {
                                 </p>
                                 <p>
                                     <span className="font-medium">Email:</span>{' '}
-                                    forcent@helios.id
+                                    Tencent@helios.id
                                 </p>
                             </div>
 
